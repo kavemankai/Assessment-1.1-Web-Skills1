@@ -94,7 +94,12 @@ aside a:hover {
     <!-- Here is our main header that is used across all the pages of our website -->
 
     <header>
-      <h1>Header</h1>
+        
+      <h1>header h1 {
+        text-align: center;
+        font-size: 150%;
+        color: var(--c-yellow);
+      }
     </header>
 
     <nav>
@@ -104,7 +109,16 @@ aside a:hover {
         <li><a href="#">Projects</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-
+      /* Remove the bullet points from the unordered list in the nav section */
+      nav ul {
+        list-style-type: none;
+      }
+      
+      /* For the list items in the nav section, align to the center and apply a flex layout */
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
        <!-- A Search form is another common non-linear way to navigate through a website. -->
 
        <form>
