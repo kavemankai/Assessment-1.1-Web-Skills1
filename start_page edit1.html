@@ -1,174 +1,146 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Page Title</title>
+  <style>
+    :root {
+      --c-background-color: rgb(0, 43, 54);
+      --c-background-highlights: rgb(7, 54, 66);
+      --base-font-color: rgb(131, 148, 150);
+      --c-magenta: rgb(211, 54, 130);
+      --c-cyan: rgb(42, 161, 152);
+      --c-yellow: rgb(181, 137, 0);
+      --c-red: rgb(220, 50, 47);
+      --c-green: rgb(133, 153, 0);
+      --c-blue: rgb(38, 139, 210);
+    }
 
-    <title>My page title</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+    body {
+      background-color: var(--c-background-color);
+      color: var(--base-font-color);
+      margin: 0;
+      font-family: sans-serif;
+    }
 
-    <style>
-      :root {
-        :root {
-  --c-background-color: rgb(0, 43, 54);
-  --c-background-highlights: rgb(7, 54, 66);
-  --base-font-color: rgb(131, 148, 150);
-  --c-magenta: rgb(211, 54, 130);
-  --c-cyan: rgb(42, 161, 152);
-  --c-yellow: rgb(181, 137, 0);
-  --c-red: rgb(220, 50, 47);
-  --c-green: rgb(133, 153, 0);
-  --c-blue: rgb(38, 139, 210);
-}
+    header, footer {
+      background-color: var(--c-background-highlights);
+      padding: 20px;
+      text-align: center;
+    }
 
-body {
-  background-color: var(--c-background-color);
-}
+    header h1 {
+      font-size: 150%;
+      color: var(--c-yellow);
+    }
 
-header, footer {
-  background-color: var(--c-background-highlights);
-}
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
 
-body, header, footer {
-  color: var(--base-font-color);
-}
+    nav ul li {
+      margin: 0 10px;
+    }
 
-article a {
-  color: var(--c-magenta);
-}
+    nav ul li a {
+      color: var(--c-blue);
+      text-decoration: none;
+    }
 
-article a:hover {
-  color: var(--c-orange);
-}
+    article a {
+      color: var(--c-magenta);
+      text-decoration: none;
+    }
 
-article h3 {
-  border: 3px solid var(--c-cyan);
-}
+    article a:hover {
+      color: var(--c-red);
+    }
 
-header h1 {
-  text-align: center;
-  font-size: 150%;
-  color: var(--c-yellow);
-}
+    article h3 {
+      border: 3px solid var(--c-cyan);
+      padding: 10px;
+    }
 
-nav ul {
-  list-style-type: none;
-}
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+    }
 
-nav ul {
-  display: flex;
-  justify-content: center;
-}
+    article {
+      flex: 1;
+    }
 
-aside {
-  color: var(--c-green);
-}
+    aside {
+      flex: 0 0 30%;
+      padding-left: 20px;
+    }
 
-aside a {
-  color: var(--c-red);
-}
+    aside a {
+      color: var(--c-red);
+      text-decoration: none;
+    }
 
-aside a:hover {
-  color: var(--c-blue);
-}
-        --base-font-color: rgb(131,148,150);
-        --secondary-font-color: rgb(88,110,117);
-        --emphasised-font: rgb(147,161,161);
+    aside a:hover {
+      color: var(--c-blue);
+    }
+  </style>
+</head>
+<body>
 
-        --c-background-color: rgb(0, 43, 54);
-        --c-background-highlights: rgb(7, 54, 66);
+<header>
+  <h1>Header</h1>
+</header>
 
-        --c-yellow: rgb(181,137,  0);
-        --c-orange: rgb(203, 75, 22);
-        --c-red: rgb(220, 50, 47);
-        --c-magenta: rgb(211, 54,130);
-        --c-violet: rgb(108,113,196);
-        --c-blue: rgb(38,139,210);
-        --c-cyan: rgb(42,161,152);
-        --c-green: rgb(133,153,0);
-      }
-    </style>
+<nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Our team</a></li>
+    <li><a href="#">Projects</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
 
-  </head>
+<main>
+  <article>
+    <h2>Article heading</h2>
 
-  <body>
-    <!-- Here is our main header that is used across all the pages of our website -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
 
-    <header>
-        
-      <h1>header h1 {
-        text-align: center;
-        font-size: 150%;
-        color: var(--c-yellow);
-      }
-    </header>
+    <h3>Subsection</h3>
 
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Our team</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      /* Remove the bullet points from the unordered list in the nav section */
-      nav ul {
-        list-style-type: none;
-      }
-      
-      /* For the list items in the nav section, align to the center and apply a flex layout */
-      nav ul {
-        display: flex;
-        justify-content: center;
-      }
-       <!-- A Search form is another common non-linear way to navigate through a website. -->
+    <p>Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.</p>
 
-       <form>
-         <input type="search" name="q" placeholder="Search query">
-         <input type="submit" value="Go!">
-       </form>
-     </nav>
+    <p>Pelientesque auctor nisi id magna consequat sagittis. Curabitur dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
 
-    <!-- Here is our page's main content -->
-    <main>
+    <h3>Another subsection</h3>
 
-      <!-- It contains an article -->
-      <article>
-        <h2>Article heading</h2>
+    <p>Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
+    <p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, is fringille sem nunc vet mi.</p>
+  </article>
 
-        <h3>Subsection</h3>
+  <aside>
+    <h2>Related</h2>
 
-        <p>Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.</p>
+    <ul>
+      <li><a href="#">Oh I do like to be beside the seaside</a></li>
+      <li><a href="#">Oh I do like to be beside the sea</a></li>
+      <li><a href="#">Although in the North of England</a></li>
+      <li><a href="#">It never stops raining</a></li>
+      <li><a href="#">Oh well...</a></li>
+    </ul>
+  </aside>
+</main>
 
-        <p>Pelientesque auctor nisi id magna consequat sagittis. Curabitur dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
+<footer>
+  <p>© Copyright 2050 by nobody. All rights reversed.</p>
+</footer>
 
-        <h3>Another subsection</h3>
-
-        <p>Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
-
-        <p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, is fringille sem nunc vet mi.</p>
-      </article>
-
-      <!-- the aside content can also be nested within the main content -->
-      <aside>
-        <h2>Related</h2>
-
-        <ul>
-          <li><a href="#">Oh I do like to be beside the seaside</a></li>
-          <li><a href="#">Oh I do like to be beside the sea</a></li>
-          <li><a href="#">Although in the North of England</a></li>
-          <li><a href="#">It never stops raining</a></li>
-          <li><a href="#">Oh well...</a></li>
-        </ul>
-      </aside>
-
-    </main>
-
-    <!-- And here is our main footer that is used across all the pages of our website -->
-
-    <footer>
-      <p>©Copyright 2050 by nobody. All rights reversed.</p>
-    </footer>
-
-  </body>
+</body>
 </html>
