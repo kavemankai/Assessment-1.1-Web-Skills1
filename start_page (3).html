@@ -8,6 +8,68 @@
 
     <style>
       :root {
+        :root {
+  --c-background-color: rgb(0, 43, 54);
+  --c-background-highlights: rgb(7, 54, 66);
+  --base-font-color: rgb(131, 148, 150);
+  --c-magenta: rgb(211, 54, 130);
+  --c-cyan: rgb(42, 161, 152);
+  --c-yellow: rgb(181, 137, 0);
+  --c-red: rgb(220, 50, 47);
+  --c-green: rgb(133, 153, 0);
+  --c-blue: rgb(38, 139, 210);
+}
+
+body {
+  background-color: var(--c-background-color);
+}
+
+header, footer {
+  background-color: var(--c-background-highlights);
+}
+
+body, header, footer {
+  color: var(--base-font-color);
+}
+
+article a {
+  color: var(--c-magenta);
+}
+
+article a:hover {
+  color: var(--c-orange);
+}
+
+article h3 {
+  border: 3px solid var(--c-cyan);
+}
+
+header h1 {
+  text-align: center;
+  font-size: 150%;
+  color: var(--c-yellow);
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+aside {
+  color: var(--c-green);
+}
+
+aside a {
+  color: var(--c-red);
+}
+
+aside a:hover {
+  color: var(--c-blue);
+}
         --base-font-color: rgb(131,148,150);
         --secondary-font-color: rgb(88,110,117);
         --emphasised-font: rgb(147,161,161);
